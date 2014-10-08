@@ -30,21 +30,21 @@ body
 {
     /*background: url('images/fond_jaune.png');*/
     background-color: #F0F0F0;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-family: HelveticaNeue-Light, 'Trebuchet MS', Arial, sans-serif;
     color: #181818;
 }
  
 #bloc_page
 {
-    width: 900px;
+    width: 80%;
     margin: auto;
 }
  
 section h1, footer h1, nav a
 {
-    font-family: Dayrom, serif;
+    font-family: HelveticaNeue-Light, Dayrom, serif;
     font-weight: normal;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
 /* Header */
@@ -64,6 +64,11 @@ header h1
     font-family: 'BallparkWeiner', serif;
     font-size: 2.5em;
     font-weight: normal;
+}
+
+article h1
+{
+	font-family: HelveticaNeue-Light;
 }
 
 #logo
@@ -91,8 +96,8 @@ header h2
 nav
 {
     display: inline-block;
-    width: 740px;
-    text-align: right;
+    width: 100%;
+    text-align: center;
 }
  
 nav ul
@@ -113,7 +118,8 @@ nav a
     padding-bottom: 3px;
     text-decoration: none;
 }
- 
+
+
 nav a:hover
 {
     color: #760001;
@@ -190,8 +196,8 @@ article img
  
 article
 {
-    width: 625px;
-    margin-right: 15px;
+    width: 70%;
+    margin-right: 0px;
 }
  
 .ico_categorie
@@ -205,28 +211,31 @@ article p
     font-size: 0.8em;
 }
 
-article h1
-{
-	font-family: Dayrom, serif;
-}
  
 aside
 {
     position: relative;
-    width: 235px;
+    width: 27%;
     background-color: #3C3C3B;
     box-shadow: 0px 2px 5px #1c1a19;
-    border-radius: 5px;
+    border-radius: 0px;
     padding: 10px;
     color: white;
     font-size: 0.9em;
 }
  
-#fleche_bulle
+aside img
 {
-    position: absolute;
-    top: 100px;
-    left: -12px;
+    margin-right: 5px;
+    border: none;
+    width: 70%;
+    height: 70%
+}
+
+ul img
+{
+	width: 15%;
+	height: 15%;
 }
  
 #photo_zozor
@@ -239,23 +248,20 @@ aside
     border: 1px solid #181818;
 }
  
-aside img
-{
-    margin-right: 5px;
-    border: none;
-}
+
 
 /* Footer */
  
 footer
 {
-    background:  url('images/ico_top.png') no-repeat top center, url('images/separateur.png') repeat-x top, url('images/ombre.png') repeat-x top;
+    /*background:  url('images/ico_top.png') no-repeat top center, url('images/separateur.png') repeat-x top, url('images/ombre.png') repeat-x top;*/
     padding-top: 25px;
 }
  
 footer p, footer ul
 {
-    font-size: 0.8em;
+    font-size: 0.6em;
+    text-align: center;
 }
  
 footer h1
@@ -263,45 +269,4 @@ footer h1
     font-size: 1.1em;
 }
  
-#tweet, #mes_photos, #mes_amis
-{
-    display: inline-block;
-    vertical-align: top;
-}
- 
-#tweet
-{
-    width: 28%;
-}
- 
-#mes_photos
-{
-    width: 35%;
-}
- 
-#mes_amis
-{
-    width: 31%;
-}
- 
-#mes_photos img
-{
-    border: 1px solid #181818;
-    margin-right: 2px;
-}
- 
-#mes_amis ul
-{
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 0;
-    width: 48%;
-    list-style-image: url('images/ico_liensexterne.png');
-    padding-left: 2px;
-}
- 
-#mes_amis a
-{
-    text-decoration: none;
-    color: #760001;
-}
+
